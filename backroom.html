@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Crimson Backroom · Ivy Hall OPS</title>
+<style>
+  :root{
+    --forest:#2E453F; --forest-deep:#24372F; --forest-ink:#1E2C27;
+    --lime:#D6FA5E; --coral:#FF9081; --coral-deep:#FF7D6B;
+    --cream:#FFF2D1; --tan-light:#EEEDDE; --mocha:#63574E;
+    --crimson:#B3243B; --crimson-deep:#7A1526; --crimson-glow:#E2415C;
+    --sans:"Avenir Next","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box; margin:0}
+  body{
+    min-height:100svh; display:flex; align-items:center; justify-content:center;
+    background:
+      radial-gradient(130% 100% at 50% -30%, rgba(179,36,59,.22) 0%, rgba(179,36,59,0) 58%),
+      linear-gradient(180deg, var(--forest) 0%, var(--forest-ink) 100%);
+    color:var(--cream); font:400 16px/1.5 var(--sans); padding:24px;
+  }
+  .card{max-width:420px; width:100%; text-align:center}
+  .wordmark{display:flex; align-items:center; justify-content:center; gap:.7rem; margin-bottom:.4rem}
+  .wordmark .name{font:400 1.6rem/1 Georgia,serif; letter-spacing:.03em}
+  .loc{display:block; text-align:left; font:700 .62rem/1.7 var(--sans); letter-spacing:.3em; text-transform:uppercase; color:var(--crimson-glow)}
+  h1{
+    margin:1.5rem 0 .3rem; font:400 1.45rem/1.2 Georgia,serif; letter-spacing:.02em;
+    color:var(--cream);
+  }
+  h1 .em{color:var(--crimson-glow)}
+  p.lead{margin:.5rem 0 1.6rem; color:rgba(255,242,209,.72); font-size:.9rem}
+  a.btn{
+    display:block; margin:0 auto 14px; max-width:320px;
+    font:700 .85rem/1 var(--sans); letter-spacing:.08em; text-transform:uppercase;
+    text-decoration:none; border-radius:999px; padding:1.05rem 1.2rem;
+    transition:transform .12s ease, background-color .15s ease, border-color .15s ease, color .15s ease;
+  }
+  a.btn:active{transform:scale(.97)}
+  a.btn.rion{background:var(--crimson); color:var(--cream)}
+  a.btn.rion:hover{background:var(--crimson-glow)}
+  a.btn.yiseli{background:transparent; color:var(--cream); border:2px solid rgba(255,242,209,.45)}
+  a.btn.yiseli:hover{border-color:var(--crimson-glow); color:var(--crimson-glow)}
+  .hint{margin-top:1.3rem; font-size:.72rem; color:rgba(255,242,209,.5)}
+  .back{
+    display:inline-block; margin-top:1.4rem; font:700 .68rem/1 var(--sans);
+    letter-spacing:.14em; text-transform:uppercase; text-decoration:none;
+    color:rgba(255,242,209,.45); border-bottom:1px solid rgba(255,242,209,.2); padding-bottom:.25rem;
+  }
+  .back:hover{color:var(--crimson-glow); border-bottom-color:var(--crimson-glow)}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="wordmark">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <path d="M18 4C11.5 9.2 8.5 15.5 8.5 21.5c0 6.4 4.3 10.7 9.5 11.8 5.2-1.1 9.5-5.4 9.5-11.8 0-6-3-12.3-9.5-17.5Z" stroke="#E2415C" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M18 11v19" stroke="#E2415C" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M18 18c-2.4-.6-4-2.4-4.6-4.8M18 23c2.4-.6 4-2.4 4.6-4.8" stroke="#E2415C" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <span class="name">Ivy Hall</span>
+        <span class="loc">Streamwood · OPS</span>
+      </div>
+    </div>
+
+    <h1>The <span class="em">Crimson</span> Backroom</h1>
+    <p class="lead">Whose desk?</p>
+
+    <a class="btn rion" href="dashboard.html">Rion</a>
+    <a class="btn yiseli" href="yiseli.html">Yiseli</a>
+
+    <p class="hint">Each desk has its own password.<br>Close-out Tracker opens from either one.</p>
+
+    <a class="back" href="index.html">← Back</a>
+  </div>
+</body>
+</html>
